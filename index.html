@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ignite Graphics</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <script src="assets/script/script.js"></script>
+  </head>
+
+  <body>
+    <!-- NAV -->
+    <nav>
+      <a href="space.html" class="nav-logo">Ignite Graphics</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="space.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div>
+        <h1>Ignite Graphics</h1>
+        <p>Creative Designs That Spark Attention</p>
+        <button class="btn" onclick="scrollToSection('portfolio')">
+          View My Work
+        </button>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        Ignite Graphics is a creative brand focused on delivering clean, modern,
+        and impactful visual designs. We help brands stand out through unique
+        and engaging visuals.
+        <br />
+        Feel free to browse and explore the portfolio section.
+      </p>
+      <br />
+      <a
+        href="about.html"
+        class="btn"
+        style="display: inline-block; text-decoration: none; margin-top: 10px"
+      >
+        About Me
+      </a>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio">
+      <h2>My Portfolio</h2>
+      <div class="portfolio-grid">
+        <div class="card">
+          <img
+            src="Images/clothing.jpg"
+            class="image1"
+            width="220"
+            height="300"
+          />
+        </div>
+        <div class="card">
+          <img
+            src="Images/my flyer 2.jpg"
+            class="image2"
+            width="300"
+            height="300"
+          />
+        </div>
+        <div class="card">
+          <img
+            class="image3"
+            src="Images/Graphic designer advert.jpg"
+            width="300"
+            height="300"
+          />
+        </div>
+        <div class="card">
+          <img
+            class="image3"
+            src="Images/birthday flyer 2.jpg"
+            width="300"
+            height="300"
+          />
+        </div>
+        <div class="card">
+          <img
+            class="image3"
+            src="Images/Winepress Flyer 4.png"
+            width="300"
+            height="300"
+          />
+        </div>
+        <div class="card">
+          <img
+            class="image3"
+            src="Images/ignite logo - Copy.png"
+            width="300"
+            height="300"
+          />
+        </div>
+        <div class="card">
+          <img
+            class="image3"
+            src="Images/priesthood flyer 2.jpg"
+            width="250"
+            height="300"
+          />
+        </div>
+        <div class="card">
+          <img
+            class="image3"
+            src="Images/PRIESTLY FLYER.jpg"
+            width="250"
+            height="300"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form onsubmit="handleSubmit(event)">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button class="btn">Send Message</button>
+      </form>
+    </section>
+
+    <div
+      id="lightbox-overlay"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Image gallery"
+    >
+      <button id="lb-close" aria-label="Close">&#x2715;</button>
+      <div id="lightbox-img-wrap">
+        <button class="lb-nav" id="lb-prev" aria-label="Previous">
+          &#8249;
+        </button>
+        <img id="lightbox-img" src="" alt="Gallery image" />
+        <button class="lb-nav" id="lb-next" aria-label="Next">&#8250;</button>
+      </div>
+      <p id="lb-counter"></p>
+    </div>
+
+    <footer>
+      © 2026 Ignite Graphics · Samuel Oluwasegun. All rights reserved.
+    </footer>
+  </body>
+</html>
